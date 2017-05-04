@@ -6647,7 +6647,7 @@
   (([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?&lt;!\.|-))
   (?=\s+(?!\?)|/?&gt;))</string>
         <key>end</key>
-        <string>(/&gt;)|(?:(&lt;/)\s*([_$a-zA-Z][-$\w.]*(?&lt;!\.|-))\s*(&gt;))</string>
+        <string>(/&gt;)|(?:(&lt;/)\s*(([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?&lt;!\.|-))\s*(&gt;))</string>
         <key>endCaptures</key>
         <dict>
           <key>0</key>

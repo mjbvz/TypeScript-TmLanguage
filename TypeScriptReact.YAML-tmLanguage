@@ -138,7 +138,7 @@ repository:
         (?=(<)\s*
         (([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?<!\.|-))
         (?=\s+(?!\?)|/?>))
-    end: (/>)|(?:(</)\s*([_$a-zA-Z][-$\w.]*(?<!\.|-))\s*(>))
+    end: (/>)|(?:(</)\s*(([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?<!\.|-))\s*(>))
     endCaptures:
       '0': { name: meta.tag.tsx }
       '1': { name: punctuation.definition.tag.end.tsx }
