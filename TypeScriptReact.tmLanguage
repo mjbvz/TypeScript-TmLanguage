@@ -6594,10 +6594,10 @@
   (?!(&lt;)\s*([_$a-zA-Z][-$\w.]*(?&lt;!\.|-))\s*(&gt;)) #look ahead is not start of tag without attributes
   (?!&lt;\s*[_$[:alpha:]][_$[:alnum:]]*((\s+extends\s+[^=&gt;])|,)) # look ahead is not type parameter of arrow
   (?=(&lt;)\s*
-  (([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?&lt;!\.|-))
+  (([_$a-zA-Z][-$\w.]*)(?&lt;!\.|-))
   (?=\s+(?!\?)|/?&gt;))</string>
         <key>end</key>
-        <string>(/&gt;)|(?:(&lt;/)\s*([_$a-zA-Z][-$\w.]*(?&lt;!\.|-))\s*(&gt;))</string>
+        <string>(/&gt;)|(?:(&lt;/)\s*(([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?&lt;!\.|-))\s*(&gt;))</string>
         <key>endCaptures</key>
         <dict>
           <key>0</key>
