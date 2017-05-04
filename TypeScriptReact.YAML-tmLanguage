@@ -118,9 +118,9 @@ repository:
         (?!(<)\s*([_$a-zA-Z][-$\w.]*(?<!\.|-))\s*(>)) #look ahead is not start of tag without attributes
         (?!<\s*[_$[:alpha:]][_$[:alnum:]]*((\s+extends\s+[^=>])|,)) # look ahead is not type parameter of arrow
         (?=(<)\s*
-        (([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?<!\.|-))
+        (([_$a-zA-Z][-$\w.]*)(?<!\.|-))
         (?=\s+(?!\?)|/?>))
-    end: (/>)|(?:(</)\s*([_$a-zA-Z][-$\w.]*(?<!\.|-))\s*(>))
+    end: (/>)|(?:(</)\s*(([a-z][a-z0-9]*|([_$a-zA-Z][-$\w.]*))(?<!\.|-))\s*(>))
     endCaptures:
       '0': { name: meta.tag.tsx }
       '1': { name: punctuation.definition.tag.end.tsx }
